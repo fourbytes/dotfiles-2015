@@ -1,0 +1,11 @@
+# Base16 Shell
+#BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+#[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+# Fix for screen not working in ssh sessions in termite
+#alias ssh='TERM=xterm-color ssh'
+export 'FLASK_CONFIG=MySQLStd'
+
+#[ -n "$XTERM_VERSION" ] && transset-df -a -m 0.9 >/dev/null
+
+export PATH="$PATH:$HOME/bin"

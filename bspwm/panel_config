@@ -1,0 +1,28 @@
+GEOMETRY="1920x30+0+0"
+FONT1="Source Code Pro-9"
+FONT2="Stlarch-Medium-R-Normal--10-100-1-75-C-80-ISO10646-1"
+SEP="%{F#ff666666}$(printf '%b' "\ue13f")%{F-}"
+
+BAR_BG="#aa000000"
+BAR_FG="#ffffffff"
+
+COLOR1="#ffff0000"
+COLOR2="#ffff0000"
+COLOR3="#ff666666"
+DIMFORE="#15374F"
+FORE="#8BA3B2"
+WHITE="#FFFFFF"
+BLACK="#202020"
+GRAY="#404040"
+
+PURPLE="#691B70"
+LIGHTPURPLE="#cc99cc"
+
+ACTIVE_BG="#aaac4142"
+ACTIVE_FG="#f5f5f5"
+
+USED_FG="#f5f5f5"
+USED_BG="#aa202020"
+
+UNUSED_FG="#f5f5f5"
+UNUSED_BG="#aa151515"
