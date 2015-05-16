@@ -6,6 +6,9 @@
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
     ~/.zshrc: zsh/zshrc
+    ~/.ncmpcpp/config:
+      create: true
+      path: ncmpcpp/config
     ~/.config/compton.conf:
       create: true
       path: compton.conf
