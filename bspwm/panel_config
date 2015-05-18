@@ -1,4 +1,4 @@
-GEOMETRY="1920x30+0+0"
+GEOMETRY="1920x24+0+0"
 FONT1="Source Code Pro-9"
 FONT2="Stlarch-Medium-R-Normal--10-100-1-75-C-80-ISO10646-1"
 SEP="%{F#ff666666}$(printf '%b' "\ue13f")%{F-}"

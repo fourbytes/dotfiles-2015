@@ -1,6 +1,4 @@
-# Base16 Shell
-#BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
-#[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+export PS1="%{[38;05;0;48;05;7m%} %3~ %{[38;05;7;48;05;4m%}⮀%{[00m%}%{[38;05;8;48;05;4m%}%{[00m%}%{[38;05;4m%}⮀ %{[00m%}"
 
 # Fix for screen not working in ssh sessions in termite
 #alias ssh='TERM=xterm-color ssh'

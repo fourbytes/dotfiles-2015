@@ -18,6 +18,9 @@
     ~/.config/sxhkd:
       create: true
       path: sxhkd
+    ~/.config/term_colors:
+      create: true
+      path: term_colors
 
 - shell:
   - [mkdir -p ~/.rtorrent/session ~/.rtorrent/watch ~/.rtorrent/downloads, Creating 

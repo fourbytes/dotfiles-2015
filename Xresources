@@ -18,43 +18,80 @@
 #define base0E #ba8baf
 #define base0F #a16946
 
-*.foreground:   base05
-*.background:   base00
-*.cursorColor:  base05
+!.foreground:   base05
+!.background:   base00
+!.cursorColor:  base05
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+!*.color0:       base00
+!*.color1:       base08
+!*.color2:       base0B
+!*.color3:       base0A
+!*.color4:       base0D
+!*.color5:       base0E
+!*.color6:       base0C
+!*.color7:       base05
 
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
-*.color15:      base07
+!*.color8:       base03
+!*.color9:       base08
+!*.color10:      base0B
+!*.color11:      base0A
+!*.color12:      base0D
+!*.color13:      base0E
+!*.color14:      base0C
+!*.color15:      base07
 
 ! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
 ! use 'shell' template to set these if necessary
-*.color16:      base09
-*.color17:      base0F
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+!*.color16:      base09
+!*.color17:      base0F
+!*.color18:      base01
+!*.color19:      base02
+!*.color20:      base04
+!*.color21:      base06
+
+! special
+*.foreground:   #cccdcf
+*.background:   #22262f
+*.cursorColor:  #cccdcf
+
+! black
+*.color0:       #33363f
+*.color8:       #66696f
+
+! red
+*.color1:       #a65361
+*.color9:       #bf6070
+
+! green
+*.color2:       #98a653
+*.color10:      #afbf60
+
+! yellow
+*.color3:       #a68a53
+*.color11:      #bf9f60
+
+! blue
+*.color4:       #538aa6
+*.color12:      #609fbf
+
+! magenta
+*.color5:       #a663a6
+*.color13:      #bf73bf
+
+! cyan
+*.color6:       #53a67c
+*.color14:      #60bf8f
+
+! white
+*.color7:       #999a9f
+*.color15:      #cccdcf
 
 ! Xft settings -
 Xft.dpi:        96
 Xft.antialias:  true
 Xft.rgba:       rgb
-Xft.hinting:    true
-Xft.hintstyle:  hintslight
+!Xft.hinting:    true
+!Xft.hintstyle:  hintslight
 
 !look and feel
 xterm.termName: xterm-256color
@@ -73,12 +110,18 @@ xterm*xftAntialias: true
 xterm*cjkWidth:false  
 xterm*faceName: Source Code Pro:antialias=True:pixelsize=14
 
-URxvt.depth: 32
-URxvt.background: [80]#181818
-URxvt.font: xft:Source Code Pro:antialias=True:pixelsize=14
-URxvt.letterSpace: -2
-URxvt.internalBorder: 16
+!URxvt.depth: 32
+!URxvt*background: [95]#20202f
+!URxvt*foreground: #d2d2d2
+URxvt.font: xft:Source Code Pro:antialias=True:pixelsize=13
+!URxvt*font: xft:lemon:size=12
+!URxvt*boldFont: xft:lemon:size=12
+!URxvt.font: xft:monaco:size=12
+URxvt.letterSpace: -1.5
+URxvt.internalBorder: 12
 URxvt.scrollBar: False
 URxvt.scrollBar_right:    yes
 URxvt.scrollBar_floating: False
 URxvt.scrollstyle:        Next
+
+#include "/home/fourbytes/.config/term_colors"
