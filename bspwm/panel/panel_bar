@@ -1,0 +1,48 @@
+#!/bin/sh
+
+
+source $(dirname $0)/panel_config
+
+while read -r line ; do
+    case $line in
+        S*)
+            sys_infos="%{r}${line#?} "
+            ;;
+        W*)
+            wm_infos="%{l}"
+            IFS=':'
+            set -- ${line#?}
+            while [ $# -gt 0 ] ; do
+                item=$1
+                name=${item#?}
+                case $item in
+                    [OFU]*)
+                        # active desktop
+                        wm_infos="$wm_infos %{F$COLOR_ACTIVE} -%{F-}"
+                        ;;
+                    o*)
+                        # inactive but occupied desktop
+                        wm_infos="$wm_infos %{F$COLOR_OCCUPIED} -%{F-}"
+                        ;;
+                    f*)
+                        # inactive desktop
+                        wm_infos="$wm_infos   "
+                        ;;
+                    u*)
+                        # urgent desktop
+                        wm_infos="$wm_infos %{F$COLOR_URGENT} -%{F-}"
+                        ;;
+                    L*)
+                        # layout
+                        layout=$(printf "%s" "${name}" | sed 's/\(.\).*/\U\1/')
+                        #wm_infos="$wm_infos $layout"
+                        wm_infos="$wm_infos  |"
+			;;
+                esac
+                shift
+            done
+            ;;
+    esac
+    printf "%s\n" "$wm_infos$sys_infos"
+
+done

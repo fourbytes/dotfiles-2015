@@ -1,0 +1,18 @@
+#!/bin/sh
+
+source $(dirname $0)/panel_config
+
+if [ $(pgrep -cx mpd) -eq 0 ] ; then
+    text="%{F$COLOR_MPD}%{F-} %{F$COLOR_ACTIVE}Not Playing anything%{F-}"
+else
+    if [[ -n $(mpc | grep playing) ]]; then
+        icon=''
+    elif [[ -n $(mpc | grep paused) ]]; then
+        icon=''
+    else
+        icon=''
+    fi
+    text="%{F$COLOR_MPD}$icon%{F-} %{F$COLOR_ACTIVE}$(mpc current)%{F-}"
+fi
+
+echo $text

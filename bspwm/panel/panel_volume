@@ -1,0 +1,21 @@
+#!/bin/sh
+
+source $(dirname $0)/panel_config
+
+volume=`amixer get Master | sed -n 's/^.*\[\([0-9]\+\)%.*$/\1/p' | uniq`
+state=`amixer get Master | sed -n 's/^.*\[\(o[nf]\+\)]$/\1/p' | uniq`
+
+if [[ $state == on ]]; then
+    if [[ $volume -gt 70 ]]; then
+        icon=''
+    elif [[ $volume -gt 20 ]]; then
+        icon=''
+    else
+        icon=''
+    fi
+else
+    icon=''
+fi
+
+text="%{F$COLOR_VOLUME}$icon%{F-} %{F$COLOR_ACTIVE}$volume%%{F-}"
+echo $text
