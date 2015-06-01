@@ -12,7 +12,7 @@ while read -r line ; do
             wm_infos="%{l}"
             IFS=':'
             set -- ${line#?}
-            while [ $# -gt 0 ] ; do
+            while [ $# -gt 1 ] ; do
                 item=$1
                 name=${item#?}
                 case $item in

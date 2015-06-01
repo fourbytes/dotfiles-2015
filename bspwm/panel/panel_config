@@ -2,7 +2,7 @@
 
 # Font
 #FONT1='-benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-1'
-FONT1="Source Code Pro-9"
+FONT1="Dejavu Sans-10"
 FONT2='-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1'
 
 # Colors
@@ -21,7 +21,7 @@ COLOR_VOLUME='#FF0ba7b9'
 
 
 # Geometry
-PANEL_HEIGHT=24
+PANEL_HEIGHT=26
 PANEL_WIDTH=1920
 PANEL_LEFT=0
 PANEL_TOP=0

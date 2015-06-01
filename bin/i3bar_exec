@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo '{"version":1}'
+echo '['
+echo '[],'
+
+exec conky -p 5 -c $HOME/.config/conky/conkyrc_i3bar

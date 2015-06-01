@@ -1,0 +1,2 @@
+#!/bin/bash
+cava -i alsa -d hw:4,1 -c white -b 36
