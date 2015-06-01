@@ -6,4 +6,4 @@ export 'FLASK_CONFIG=MySQLStd'
 
 #[ -n "$XTERM_VERSION" ] && transset-df -a -m 0.9 >/dev/null
 
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.bin"
